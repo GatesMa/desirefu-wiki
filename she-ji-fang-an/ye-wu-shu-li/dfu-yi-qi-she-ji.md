@@ -4,26 +4,21 @@ description: DesireFU一期准备完成的设计功能
 
 # DFU一期设计
 
-## Getting Super Powers
+## 完成登陆、账号注册、角色维护、比赛创建
 
-Becoming a super hero is a fairly straight forward process:
+特殊角色，可以新建比赛类型。普通角色（学生）可以发布组队信息等。
 
-```
-$ give me super-powers
-```
+#### 1. 账号类型
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+作为一个比赛组队小程序，目前暂定应该有以下角色：
 
-Once you're strong enough, save the world:
+1. 普通账号。可以参与到比赛当中，可以与其他队友形成一个队伍“圈子，不能进行创建比赛等特殊操作。
+2. 
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
+
+
+
+
 
 
 
