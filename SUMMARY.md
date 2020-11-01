@@ -11,6 +11,7 @@
   * [统一登陆](she-ji-fang-an/tong-yi-deng-lu.md)
   * [角色规则](she-ji-fang-an/jiao-se-gui-ze.md)
 * [技术选型](ji-shu-xuan-xing.md)
+* [DFU运维](dfu-yun-wei.md)
 * [开发归档](kai-fa-gui-dang.md)
 * [About](about.md)
 
