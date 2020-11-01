@@ -25,7 +25,7 @@ description: 暂定系统实现需要的语言、框架、数据产品等（开�
 * **gradle**。构建工具，gradle较maven更灵活。
 * **Screw**。数据库表结构生成框架，用于生成可视库表页面。
 * **HikariCP**。数据库连接池，HikariCP是市面上效率最高的数据库连接池了。全面比Druid，但是Druid可以有数据库监控等，侧重点不一样。
-* **Swagger。**接口文档框架。
+* **Swagger、knife4j。**接口文档框架。
 * **logback。**日志框架推荐SLF4J和Logback。
 * **Elasticsearch**。es客户端jar。
 * **Fastjson**。主流json解析工具。
