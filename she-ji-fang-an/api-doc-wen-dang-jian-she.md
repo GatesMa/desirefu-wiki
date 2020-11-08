@@ -30,7 +30,7 @@ description: 接口文档，
 
 下面这个图是配置文件存放的位置，swagger\_generate\_config.json是总配置文件，swagger.yaml是接口的详细配置文件，使用yaml格式：
 
-![swagger&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;](../.gitbook/assets/image%20%282%29.png)
+![swagger&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;](../.gitbook/assets/image%20%287%29.png)
 
 Swagger.yaml的配置案例可以看这里：[https://editor.swagger.io/](https://editor.swagger.io/)
 
@@ -53,15 +53,13 @@ task swaggerCodeGen(type:Exec,dependsOn:copyRuntimeLibs) {
 
 生成好的代码在`build/output/swagger`目录下，可以直接拷贝到自己的java源目录下即可使用：
 
-![&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x7F6E;](../.gitbook/assets/image%20%283%29.png)
+![&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x7F6E;](../.gitbook/assets/image%20%289%29.png)
 
 ### 4. 查看结果
 
 写一个springboot的启动类，启动springboot即可，访问自己设置的根路径：
 
-![](../.gitbook/assets/image%20%284%29.png)
-
-
+![](../.gitbook/assets/image%20%283%29.png)
 
 
 
