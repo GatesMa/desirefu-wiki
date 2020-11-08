@@ -16,6 +16,8 @@ description: DesireFU校园组队招募小程序前后端开发概览wiki
 
 Wiki文档地址：[https://wiki.desirefu.gatesma.cn/](https://wiki.desirefu.gatesma.cn/)
 
+API-DOC地址：[http://doc.desirefu.gatesma.cn/desire\_fu/v1](http://doc.desirefu.gatesma.cn/desire_fu/v1)
+
 ## 简要技术选型
 
 {% hint style="info" %}
