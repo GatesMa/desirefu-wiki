@@ -18,6 +18,8 @@ Wiki文档地址：[https://wiki.desirefu.gatesma.cn/](https://wiki.desirefu.gat
 
 API-DOC地址：[http://doc.desirefu.gatesma.cn/desire\_fu/v1](http://doc.desirefu.gatesma.cn/desire_fu/v1)
 
+Kibana地址：null
+
 ## 简要技术选型
 
 {% hint style="info" %}
