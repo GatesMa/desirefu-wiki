@@ -17,6 +17,7 @@
     * [设计相关](she-ji-fang-an/shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/README.md)
       * [外键使用](she-ji-fang-an/shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/wai-jian-shi-yong.md)
       * [联表查询vs单表多次查询](she-ji-fang-an/shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/lian-biao-cha-xun-vs-dan-biao-duo-ci-cha-xun.md)
+    * [建表SQL](she-ji-fang-an/shu-ju-ku-biao-jie-gou-she-ji/jian-biao-sql.md)
 * [技术选型](ji-shu-xuan-xing.md)
 * [DFU运维](dfu-yun-wei.md)
 * [开发归档](kai-fa-gui-dang.md)
