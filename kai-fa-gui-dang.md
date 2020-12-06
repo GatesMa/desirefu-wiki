@@ -1,13 +1,5 @@
 # 开发归档
 
-### 2020-12-05 账号创建接口
-
-Account\_建表，完成账号创建接口，rootUser与账号绑定
-
-### 2020-11-27 用户相关接口，用户与账号绑定
-
-UserApiController、UserLoginController
-
 ### 2020-11-07 完成logback配置、filebeat+es+kibana日志收集
 
 成功完成logback配置，打印请求记录，使用filebeat进行收集，上报到es，再使用kibana可视化工具进行可视化搜索。
