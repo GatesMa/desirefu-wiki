@@ -6,6 +6,7 @@
     * [DFU一期](she-ji-fang-an/ye-wu-shu-li/dfu-yi-qi-she-ji/README.md)
       * [账号管理](she-ji-fang-an/ye-wu-shu-li/dfu-yi-qi-she-ji/zhang-hao-guan-li.md)
       * [用户登陆](she-ji-fang-an/ye-wu-shu-li/dfu-yi-qi-she-ji/yong-hu-deng-lu.md)
+      * [WX用户openId获取](she-ji-fang-an/ye-wu-shu-li/dfu-yi-qi-she-ji/wx-yong-hu-openid-huo-qu.md)
     * [统一登陆](she-ji-fang-an/ye-wu-shu-li/tong-yi-deng-lu.md)
     * [角色规则](she-ji-fang-an/ye-wu-shu-li/jiao-se-gui-ze.md)
   * [API DOC 文档建设](she-ji-fang-an/api-doc-wen-dang-jian-she.md)
