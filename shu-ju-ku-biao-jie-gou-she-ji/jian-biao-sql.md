@@ -3,6 +3,7 @@
 > 建表SQL：
 
 ```sql
+create database DFU_;
 use DFU_;
 CREATE TABLE IF NOT EXISTS `Account_` (
   `accountId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '帐号ID',
@@ -22,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `Account_` (
   PRIMARY KEY (`accountId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `AccountUserRole_` (
+CREATE TABLE IF NOT EXISTS `AccountUserRole_` (
   `accountRoleId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'qq对应生成的openId',
   `accountType` int(11) NOT NULL COMMENT '账号类型',
   `userId` bigint(20) NOT NULL COMMENT '用户ID',
@@ -36,21 +37,21 @@ CREATE TABLE `AccountUserRole_` (
   PRIMARY KEY (`accountRoleId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用于存储账号对应用户和角色信息';
 
-CREATE TABLE `OpenIdQQIdx_` (
+CREATE TABLE IF NOT EXISTS `OpenIdQQIdx_` (
   `openId` varchar(128) NOT NULL COMMENT 'qq对应生成的openId',
   `qqNumber` varchar(128) NOT NULL COMMENT 'qq号',
   `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
   PRIMARY KEY (`openId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用于存储openId对应qq关联关系';
 
-CREATE TABLE `OpenIdWXIdx_` (
+CREATE TABLE IF NOT EXISTS `OpenIdWXIdx_` (
   `openId` varchar(128) NOT NULL COMMENT 'wx对应生成的openId',
   `wxId` varchar(128) NOT NULL COMMENT '微信ID',
   `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
   PRIMARY KEY (`openId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用于存储openId对应wx关联关系';
 
-CREATE TABLE `User_` (
+CREATE TABLE IF NOT EXISTS `User_` (
   `userId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
   `userName` varchar(200) NOT NULL DEFAULT '' COMMENT 'userName',
   `cellphone` varchar(128) NOT NULL COMMENT '手机号',
@@ -63,7 +64,7 @@ CREATE TABLE `User_` (
   PRIMARY KEY (`userId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `UserLogin_` (
+CREATE TABLE IF NOT EXISTS `UserLogin_` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'ID',
   `userId` bigint(20) NOT NULL COMMENT '用户ID',
   `loginName` varchar(128) NOT NULL COMMENT '请求帐号时的登录名字或者Id',
@@ -113,6 +114,52 @@ CREATE TABLE IF NOT EXISTS `NormalAccount_` (
   `lastModifiedUserId` bigint(20) NOT NULL COMMENT '最后修改人userId',
   `lastModifiedTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
   PRIMARY KEY (`accountId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '普通学生账号';
+
+
+CREATE TABLE IF NOT EXISTS `CompetitionCreatorAccount_` (
+  `accountId` bigint(20) NOT NULL COMMENT '帐号ID',
+  `accountType` int(11) NOT NULL COMMENT '账号类型',
+  `author` varchar(4096) default '' COMMENT '可以创建比赛的权限',
+  `createdUserId` bigint(20) NOT NULL COMMENT '创建人userId',
+  `createdTime` datetime NOT NULL COMMENT '创建时间',
+  `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
+  `lastModifiedUserId` bigint(20) NOT NULL COMMENT '最后修改人userId',
+  `lastModifiedTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
+  PRIMARY KEY (`accountId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '比赛创建者账号';
+
+CREATE TABLE IF NOT EXISTS `OSSAccount_` (
+  `accountId` bigint(20) NOT NULL COMMENT '帐号ID',
+  `accountType` int(11) NOT NULL COMMENT '账号类型',
+  `type` int(11) default NULL COMMENT '什么类型的运营账号，操作者观察者',
+  `createdUserId` bigint(20) NOT NULL COMMENT '创建人userId',
+  `createdTime` datetime NOT NULL COMMENT '创建时间',
+  `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
+  `lastModifiedUserId` bigint(20) NOT NULL COMMENT '最后修改人userId',
+  `lastModifiedTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
+  PRIMARY KEY (`accountId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT 'OSS运营人员账号';
+
+CREATE TABLE IF NOT EXISTS `RootAccount_` (
+  `accountId` bigint(20) NOT NULL COMMENT '帐号ID',
+  `accountType` int(11) NOT NULL COMMENT '账号类型',
+  `createdUserId` bigint(20) NOT NULL COMMENT '创建人userId',
+  `createdTime` datetime NOT NULL COMMENT '创建时间',
+  `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
+  `lastModifiedUserId` bigint(20) NOT NULL COMMENT '最后修改人userId',
+  `lastModifiedTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
+  PRIMARY KEY (`accountId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT 'ROOT账号';
+
+
+
+
+
+
+
+
+
+
 ```
 
