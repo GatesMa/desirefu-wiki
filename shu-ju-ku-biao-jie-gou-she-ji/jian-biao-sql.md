@@ -108,6 +108,7 @@ CREATE TABLE IF NOT EXISTS `NormalAccount_` (
   `departmentId` int(11) NOT NULL COMMENT '学院Id',
   `major` varchar(255) NOT NULL COMMENT '专业',
   `stuId` varchar(255) DEFAULT NULL COMMENT '学号',
+  `realName` varchar(255) DEFAULT NULL COMMENT '真实姓名',
   `createdUserId` bigint(20) NOT NULL COMMENT '创建人userId',
   `createdTime` datetime NOT NULL COMMENT '创建时间',
   `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
