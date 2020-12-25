@@ -14,7 +14,7 @@
 
 微信没有办法直接获取用户的微信号，最多只能授权获取手机号，但是手机号其实也不能作为微信号的唯一凭证，所以需要调用微信的接口获取微信的唯一凭证openId，具体的获取方法见：（调用微信提供的接口获取）
 
-{% page-ref page="../../she-ji-fang-an/ye-wu-shu-li/dfu-yi-qi-she-ji/wx-yong-hu-openid-huo-qu.md" %}
+{% page-ref page="../../she-ji-fang-an/dfu-yi-qi-she-ji/wx-yong-hu-openid-huo-qu.md" %}
 
 ### 3. 获取可登陆账号列表流程
 

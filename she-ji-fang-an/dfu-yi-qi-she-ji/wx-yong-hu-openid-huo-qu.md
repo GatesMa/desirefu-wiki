@@ -14,9 +14,9 @@ description: 获取wx用户的唯一标识appId
 
 [接口地址](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html)
 
-![&#x63A5;&#x53E3;&#x56DE;&#x8C03;](../../../.gitbook/assets/image%20%2814%29.png)
+![&#x63A5;&#x53E3;&#x56DE;&#x8C03;](../../.gitbook/assets/image%20%2814%29.png)
 
-![&#x6210;&#x529F;&#x56DE;&#x8C03;](../../../.gitbook/assets/image%20%2811%29.png)
+![&#x6210;&#x529F;&#x56DE;&#x8C03;](../../.gitbook/assets/image%20%2811%29.png)
 
 **注：调用 login 会引起登录态的刷新，之前的 sessionKey 可能会失效**
 
@@ -51,11 +51,11 @@ App({
 
 [接口地址](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/login/auth.code2Session.html)
 
-![&#x8BF7;&#x6C42;&#x53C2;&#x6570;](../../../.gitbook/assets/image%20%2810%29.png)
+![&#x8BF7;&#x6C42;&#x53C2;&#x6570;](../../.gitbook/assets/image%20%2810%29.png)
 
-![&#x8FD4;&#x56DE;&#x503C;](../../../.gitbook/assets/image%20%2815%29.png)
+![&#x8FD4;&#x56DE;&#x503C;](../../.gitbook/assets/image%20%2815%29.png)
 
-![&#x9519;&#x8BEF;&#x7801;](../../../.gitbook/assets/image%20%2812%29.png)
+![&#x9519;&#x8BEF;&#x7801;](../../.gitbook/assets/image%20%2812%29.png)
 
 示例请求代码：
 
