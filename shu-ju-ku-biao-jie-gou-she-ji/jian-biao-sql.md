@@ -153,35 +153,6 @@ CREATE TABLE IF NOT EXISTS `RootAccount_` (
   PRIMARY KEY (`accountId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT 'ROOT账号';
 
-CREATE TABLE IF NOT EXISTS `Competition_` (
-  `competitionId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '帐号ID',
-  `accountId` bigint(20) NOT NULL COMMENT '比赛归属帐号ID',
-  `accountType` int(11) NOT NULL COMMENT '比赛归属账号类型',
-  `status` int(11) NOT NULL COMMENT '0-草稿，1-可见',
-  `type` int(11) NOT NULL COMMENT '比赛类型 - 省级、校级等',
-  `title` varchar(255) default '' COMMENT '比赛名称',
-  `founder` varchar(255) default null COMMENT '创办方',
-  `content` text default null COMMENT '具体通知内容，富文本',
-  `pv` int(11) default 0 COMMENT '浏览人数',
-  `beginTime` datetime default null COMMENT '比赛开始时间',
-  `endTime` datetime default null COMMENT '比赛结束时间',
-  `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
-  `createdUserId` bigint(20) NOT NULL COMMENT '创建人userId',
-  `createdTime` datetime NOT NULL COMMENT '创建时间',
-  `lastModifiedUserId` bigint(20) NOT NULL COMMENT '最后修改人userId',
-  `lastModifiedTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
-  PRIMARY KEY (`competitionId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '比赛';
-
-CREATE TABLE IF NOT EXISTS `CompetitionVisible_` (
-  `collegeId` int(11) NOT NULL COMMENT '高校ID',
-  `competitionId` bigint(20) NOT NULL COMMENT '帐号ID',
-  `deleteStatus` int(11) NOT NULL COMMENT '删除状态，0-正常，1-删除',
-  `createdTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `lastModifiedTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'lastModifiedTime',
-  PRIMARY KEY (`competitionId`, `collegeId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '高校可见比赛表';
-
 
 
 
