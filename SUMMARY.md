@@ -23,6 +23,7 @@
     * [bindtap事件子元素不传参](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/bindtap-shi-jian-zi-yuan-su-bu-chuan-can.md)
     * [图片服务器](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/tu-pian-fu-wu-qi.md)
     * [微信小程序tabbar遮挡问题](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/wei-xin-xiao-cheng-xu-tabbar-zhe-dang-wen-ti.md)
+    * [setData异步问题解决](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/setdata-yi-bu-wen-ti-jie-jue.md)
     * [富文本编辑器](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/fu-wen-ben-bian-ji-qi.md)
 * [数据库设计](shu-ju-ku-biao-jie-gou-she-ji/README.md)
   * [建表SQL](shu-ju-ku-biao-jie-gou-she-ji/jian-biao-sql.md)
