@@ -25,6 +25,7 @@
     * [微信小程序tabbar遮挡问题](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/wei-xin-xiao-cheng-xu-tabbar-zhe-dang-wen-ti.md)
     * [setData异步问题解决](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/setdata-yi-bu-wen-ti-jie-jue.md)
     * [授权用户点击拒绝问题](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/shou-quan-yong-hu-dian-ji-ju-jue-wen-ti.md)
+    * [navigateTo传递对象，需要编码解码](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/navigateto-chuan-di-dui-xiang-xu-yao-bian-ma-jie-ma.md)
     * [文件上传res.data是string](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/wen-jian-shang-chuan-res.data-shi-string.md)
     * [富文本编辑器](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/fu-wen-ben-bian-ji-qi.md)
 * [数据库设计](shu-ju-ku-biao-jie-gou-she-ji/README.md)
