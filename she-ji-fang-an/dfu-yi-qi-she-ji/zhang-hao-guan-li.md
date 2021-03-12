@@ -8,6 +8,7 @@
 2. **比赛创建人账号**。可以为整个程序新增一个比赛类型，如果有其他想要参数到其中的人，可以进行发起组队，认领其他队友。
 3. **OSS账号**。后台运营角色，可以看到整个程序的全部数据，用于统筹调度，处理一些客户的问题，他们可能因为权限不足无法操作，那么OSS就可以派上用场了。**`OSS(Operation Support Systems)  运营支撑系统`**
 4. **系统拥有者账号**。理论上只有一个，用于其他权限账号的任免
+5. **队伍系统账号。**所有一个队伍的人可以进入一个队伍账号查看信息。
 
 目前设计方案，账号类型枚举：
 
@@ -42,11 +43,47 @@ CREATE TABLE IF NOT EXISTS `Account_`(
 
 ### **3. 账号相关接口实现（注册、修改）**
 
-\*\*\*\*
+账号几张表的模型图：
 
-\*\*\*\*
+![&#x6570;&#x636E;&#x6A21;&#x578B;&#x56FE;](../../.gitbook/assets/image%20%2819%29.png)
 
-\*\*\*\*
+#### （1）账号注册
+
+以注册学生账号（NormalAccount）为例，涉及两张数据库表：Account\_、NormalAccount，
+
+{% api-method method="post" host="/desire\_fu/v1/normal\_account/add" path="" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
 
 \*\*\*\*
 
