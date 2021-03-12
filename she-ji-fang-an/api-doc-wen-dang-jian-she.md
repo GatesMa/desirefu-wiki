@@ -57,6 +57,79 @@ task swaggerCodeGen(type:Exec,dependsOn:copyRuntimeLibs) {
 
 ### 4. 查看结果
 
+例如，一个接口和实体类的声明配置如下：
+
+```yaml
+/user/add:
+  post:
+    tags:
+      - User
+    summary: 创建用户
+    description: 创建用户，返回"用户ID"
+    operationId: addUser
+    consumes:
+      - application/json
+    produces:
+      - application/json
+    parameters:
+      - in: body
+        name: body
+        description: 创建用户
+        required: true
+        schema:
+          $ref: '#/definitions/AddUserRequest'
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/AddUserRet'
+      400:
+        description: Invalid RequestBody supplied
+      404:
+        description: RequestBody not found
+AddUserRet:
+    allOf:
+      - $ref: '#/definitions/ReturnCode'
+      - properties:
+          data:
+            $ref: '#/definitions/AddUserRetData'
+AddUserRetData:
+  properties:
+    user_id:
+      type: integer
+      format: int64
+      example: 100000
+      description: 用户ID
+AddUserRequest:
+  required:
+    - login_name
+    - login_name_type
+  properties:
+    login_name:
+      type: string
+      description: 登录账号名称
+    login_name_type:
+      type: integer
+      format: int32
+      example: 1
+      description: 登录账号类型
+    user_name:
+      type: string
+      description: 用户名称
+    cellphone:
+      type: string
+      description: 手机号码
+    email:
+      type: string
+      description: 邮箱
+    created_user_id:
+      type: integer
+      format: int64
+      example: 3453454
+      description: 创建者userId
+  title: AddUserRequest
+```
+
 写一个springboot的启动类，启动springboot即可，访问自己设置的根路径：
 
 ![](../.gitbook/assets/image%20%283%29.png)
