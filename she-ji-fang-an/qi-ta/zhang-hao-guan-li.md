@@ -67,7 +67,7 @@ STATUS_DENIED(2, "审核不通过"),// 审核不通过
 STATUS_FROZEN(3, "冻结");  // 冻结
 ```
 
-![&#x4FEE;&#x6539;&#x8D26;&#x53F7;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2824%29.png)
+![&#x4FEE;&#x6539;&#x8D26;&#x53F7;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2825%29.png)
 
 修改接口比较简单，直接更新数据即可。
 
