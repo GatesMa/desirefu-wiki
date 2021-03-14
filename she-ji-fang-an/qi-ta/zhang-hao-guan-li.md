@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `Account_`(
 
 以注册学生账号（NormalAccount）为例，涉及两张数据库表：Account\_、NormalAccount，接口地址：`/desire_fu/v1/normal_account/add`
 
-![&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2821%29.png)
+![&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2822%29.png)
 
 其中，account\_type字段、memo字段用于创建Account\_表的一条记录，获取到主键accountId后，把该id作为NormalAccount表的主键，带上其他参数创建一条记录，至此，一个学生账号的记录就创建完成了。
 
@@ -67,7 +67,7 @@ STATUS_DENIED(2, "审核不通过"),// 审核不通过
 STATUS_FROZEN(3, "冻结");  // 冻结
 ```
 
-![&#x4FEE;&#x6539;&#x8D26;&#x53F7;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2826%29.png)
+![&#x4FEE;&#x6539;&#x8D26;&#x53F7;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;](../../.gitbook/assets/image%20%2827%29.png)
 
 修改接口比较简单，直接更新数据即可。
 
