@@ -4,7 +4,7 @@
 
 {% page-ref page="../../shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/wai-jian-shi-yong.md" %}
 
-![&#x6570;&#x636E;&#x6A21;&#x578B;](../../.gitbook/assets/image%20%2832%29.png)
+![&#x6570;&#x636E;&#x6A21;&#x578B;](../../.gitbook/assets/image%20%2834%29.png)
 
 账号模块主要涉及两个大的接口，一个是账号创建、一个是账号修改（审核），具体看下面的链接：
 
