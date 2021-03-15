@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `Notification_` (
 
 首页轮播图的类型是1，实现的效果是在页面上方有轮播图展示几张图片，用户如果点击，就会跳转到比赛的详情页面，所以这个type的公告是一个列表，可以允许同时有几个type为1的列表。
 
-![&#x6548;&#x679C;](../../.gitbook/assets/image%20%2826%29.png)
+![&#x6548;&#x679C;](../../.gitbook/assets/image%20%2827%29.png)
 
 公告查询请求`/desire_fu/v1/notification/select`接口的一个返回值如下，包含两条记录，也就是上面轮播图里的图片，front\_img字段是图片链接，可以直接展示，content字段里的内容就是对应要跳转的比赛的id，微信小程序前端拿到id后，请求比赛查询接口`/desire_fu/v1/competition/select_scroll`，拿到比赛数据，渲染到比赛展示页即可。
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `Notification_` (
 
 广场公告效果展示，其实是一个纯文字的公告，比较简单，但是跟轮播图不一样的是这个文字公告只有一条，我们有两个解决方案，可以在添加一条记录后把之前type为2的记录标记为删除，也可以直接添加后，把记录按插入时间倒序排，取第一条即可，但是数据量大的时候查询效率和接口请求时长会变慢：
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 请求结果示例：
 

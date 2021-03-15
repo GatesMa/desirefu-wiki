@@ -20,7 +20,7 @@ OSS_PROCESS(7);
 
 队长的入队请求列表只需要请求status为0的请求，同意或拒绝，只需要更新OrganizeAccountApplication\_这个记录的status字段即可。如果同意的话会添加一条OrganizeAccountRelation\_的记录，标识这个人已经进入了该队伍。
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 #### （2）获取组织成员
 
@@ -28,5 +28,5 @@ OSS_PROCESS(7);
 
 效果：
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
