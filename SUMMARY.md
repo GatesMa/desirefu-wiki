@@ -27,6 +27,8 @@
       * [openId本地缓存](qian-duan-she-ji-fang-an/miniprogram-yi-qi/shou-ye-zhang-hao-lie-biao/openid-ben-di-huan-cun.md)
     * [学生系统](qian-duan-she-ji-fang-an/miniprogram-yi-qi/xue-sheng-xi-tong/README.md)
       * [HomePage页](qian-duan-she-ji-fang-an/miniprogram-yi-qi/xue-sheng-xi-tong/homepage-ye.md)
+      * [广场页](qian-duan-she-ji-fang-an/miniprogram-yi-qi/xue-sheng-xi-tong/guang-chang-ye.md)
+      * [比赛详情页](qian-duan-she-ji-fang-an/miniprogram-yi-qi/xue-sheng-xi-tong/bi-sai-xiang-qing-ye.md)
     * [比赛创建系统](qian-duan-she-ji-fang-an/miniprogram-yi-qi/bi-sai-chuang-jian-xi-tong.md)
     * [OSS运营](qian-duan-she-ji-fang-an/miniprogram-yi-qi/oss-yun-ying.md)
     * [ROOT](qian-duan-she-ji-fang-an/miniprogram-yi-qi/root.md)

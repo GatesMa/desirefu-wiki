@@ -8,7 +8,7 @@
 
 接口流程：1. 根据传入的登陆信息（loginName和loginNameType）或者userId，查询AccountUserRole表，获取与User绑定的账号accountId。2. 生成一个账号类型列表，不同类型的账号放到一个map里，最后就形成了不同系统的账号列表，一般来说一个用户的学生账号只有一个，但是可以同时是几个比赛创建账号的用户，也可以是几个运营账号的用户。3. 通过accountId查询Account表获取账号名称等信息，提供给前端展示。
 
-![&#x8BF7;&#x6C42;&#x793A;&#x4F8B;](../../.gitbook/assets/image%20%2821%29.png)
+![&#x8BF7;&#x6C42;&#x793A;&#x4F8B;](../../.gitbook/assets/image%20%2822%29.png)
 
 #### （2）用户绑定解绑新的账号
 
