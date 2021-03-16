@@ -33,6 +33,8 @@
     * [OSS运营](qian-duan-she-ji-fang-an/miniprogram-yi-qi/oss-yun-ying.md)
     * [ROOT](qian-duan-she-ji-fang-an/miniprogram-yi-qi/root.md)
     * [队伍系统](qian-duan-she-ji-fang-an/miniprogram-yi-qi/dui-wu-xi-tong.md)
+  * [文件上传工具](qian-duan-she-ji-fang-an/wen-jian-shang-chuan-gong-ju.md)
+  * [开发环境](qian-duan-she-ji-fang-an/kai-fa-huan-jing.md)
   * [其他](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/README.md)
     * [微信小程序异步请求问题](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/untitled/README.md)
       * [setData异步问题解决](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/untitled/setdata-yi-bu-wen-ti-jie-jue.md)
