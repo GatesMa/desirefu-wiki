@@ -31,7 +31,7 @@
 
 实现效果理论上可以同时多个tab页面，而且不同系统都可以进行自定义tabbar。
 
-![&#x793A;&#x4F8B;](../../.gitbook/assets/image%20%2826%29.png)
+![&#x793A;&#x4F8B;](../../../.gitbook/assets/image%20%2826%29.png)
 
 
 

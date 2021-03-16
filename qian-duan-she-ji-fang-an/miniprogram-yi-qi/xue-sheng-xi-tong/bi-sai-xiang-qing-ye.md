@@ -8,7 +8,7 @@
 
 点击加入按钮后打开的队伍列表页面：
 
-![&#x8BE6;&#x60C5;](../../../.gitbook/assets/image%20%2844%29.png)
+![&#x8BE6;&#x60C5;](../../../.gitbook/assets/image%20%2845%29.png)
 
 
 
