@@ -4,11 +4,11 @@
 
 在这里，OSS主要又以下功能：账号审核、队伍审核、比赛审核、首页轮播图修改、公告修改、一些可视化图表展示等。
 
-![&#x6982;&#x89C8;](../../.gitbook/assets/image%20%2831%29.png)
+![&#x6982;&#x89C8;](../../.gitbook/assets/image%20%2832%29.png)
 
-![&#x8D26;&#x53F7;&#x5BA1;&#x6838;](../../.gitbook/assets/image%20%2826%29.png)
+![&#x8D26;&#x53F7;&#x5BA1;&#x6838;](../../.gitbook/assets/image%20%2827%29.png)
 
-![&#x961F;&#x4F0D;&#x5BA1;&#x6838;](../../.gitbook/assets/image%20%2834%29.png)
+![&#x961F;&#x4F0D;&#x5BA1;&#x6838;](../../.gitbook/assets/image%20%2835%29.png)
 
 
 
