@@ -54,7 +54,9 @@
     * [DateTime与TimeStamp的区别](shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/datetime-yu-timestamp-de-qu-bie.md)
     * [DeleteStatus的使用](shu-ju-ku-biao-jie-gou-she-ji/she-ji-xiang-guan/deletestatus-de-shi-yong.md)
 * [技术选型](ji-shu-xuan-xing.md)
-* [DFU运维](dfu-yun-wei.md)
+* [DFU运维](dfu-yun-wei/README.md)
+  * [机器部署](dfu-yun-wei/ji-qi-bu-shu.md)
+  * [服务模块](dfu-yun-wei/fu-wu-mo-kuai.md)
 * [开发归档](kai-fa-gui-dang.md)
 * [About](about.md)
 
