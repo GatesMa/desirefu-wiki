@@ -21,6 +21,7 @@
     * [角色规则](she-ji-fang-an/qi-ta/jiao-se-gui-ze.md)
     * [WX用户OPENID获取](she-ji-fang-an/qi-ta/wx-yong-hu-openid-huo-qu.md)
     * [账号管理](she-ji-fang-an/qi-ta/zhang-hao-guan-li.md)
+    * [Hikaricp连接池问题](she-ji-fang-an/qi-ta/hikaricp-lian-jie-chi-wen-ti.md)
 * [前端设计方案](qian-duan-she-ji-fang-an/README.md)
   * [模块](qian-duan-she-ji-fang-an/miniprogram-yi-qi/README.md)
     * [首页账号列表](qian-duan-she-ji-fang-an/miniprogram-yi-qi/shou-ye-zhang-hao-lie-biao/README.md)
