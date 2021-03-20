@@ -24,6 +24,8 @@ API-DOC地址：[http://doc.desirefu.gatesma.cn/desire\_fu/v1](http://doc.desire
 
 Kibana地址：null
 
+演示视频Demo：[https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4](https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4)
+
 ## 当前进展：
 
 第一阶段进度：`70%`
