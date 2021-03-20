@@ -37,9 +37,9 @@
 
     2）idleTimeout：此属性控制允许连接在池中闲置的最长时间,此设置仅适用于minimumIdle设置为小于maximumPoolSize的情况 默认:600000\(10minutes\)
 
-   3）maxLifetime：一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒
+   2）maxLifetime：一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒
 
-4）maximumPoolSize：连接池中允许的最大连接数\(包括空闲和正在使用的连接\)。缺省值：10；
+3）maximumPoolSize：连接池中允许的最大连接数\(包括空闲和正在使用的连接\)。缺省值：10；
 
 {% hint style="info" %}
 **综合以上分析：**_connectionTimeout采用默认值30s，应该不会有太大问题。maximumPoolSize根据业务量的设置，不会有太大问题。maxLifetime如果过长，且idleTimeout没有时间限制时，会导致连接数很大，空闲连接一直得不到释放，严重挤占资源，容易引起连接数不够的问题。特别是maxLifetime如果大于数据库超时时长，就会抛出数据库连接异常，这也是本次生产问题所在：maxLifetime设置成30分钟，超过了数据库连接时长15分钟，connectionTimeout为30秒，所以每次异常都是在15分30秒抛出，数据库端已经收到Hikaricp连接请求，但是因网络问题等因素，到达超时时长而没有获取到连接。idleTimeout只有在minimumIdle设置为小于maximumPoolSize的情况下才生效，而我没有设置最小空闲连接数minimumIdle的值，minimumIdle默认是等于maximumPoolSize，此时idleTimeout不受限，空闲连接一直没有得到回收，出于系统优化以及并发稳定性考虑，应该增加此配置。_
