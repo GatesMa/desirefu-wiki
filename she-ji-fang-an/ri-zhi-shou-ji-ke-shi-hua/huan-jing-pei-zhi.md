@@ -1,6 +1,6 @@
 # 环境配置
 
-安装elastic，elatsic不能用root启动
+安装elastic，elatsic不能用root启动，文件夹必须切换到新建的用户组下，否则会出现权限问题
 
 ```text
 修改文件权限：chmod 754 start.sh
@@ -36,6 +36,60 @@ cd /usr/local/services/elasticsearch/elasticsearch-5.4.1
 ps aux|grep elasticsearch|grep -v grep |awk  '{print $2}'| xargs kill -9
 ```
 {% endcode %}
+
+启动中的问题：
+
+```bash
+[1]: max number of threads [3517] for user [elastic] is too low, increase to at least [4096]
+[2]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[3]: the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+
+设置/etc/security/limits.conf
+* soft nproc 5000
+* hard nproc 5000
+root soft nproc 5000
+root hard nproc 5000
+
+设置/etc/sysctl.conf
+添加如下配置
+vm.max_map_count=655360
+并执行
+sysctl -p
+
+
+[1]: the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+
+#添加配置
+discovery.seed_hosts: ["127.0.0.1"]
+ 
+cluster.initial_master_nodes: ["node-1"]
+```
+
+es配置文件：
+
+```yaml
+network.host: 0.0.0.0
+http.port: 9200
+discovery.seed_hosts: ["127.0.0.1"]
+cluster.initial_master_nodes: ["node-1"]
+```
+
+kibana配置文件：
+
+```yaml
+server.port: 5601
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["http://localhost:9200"]
+kibana.index: ".kibana"
+```
+
+
+
+
+
+
+
+
 
 
 
