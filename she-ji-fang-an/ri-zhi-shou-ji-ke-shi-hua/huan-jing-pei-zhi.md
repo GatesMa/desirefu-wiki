@@ -2,7 +2,7 @@
 
 安装elastic，elatsic不能用root启动，文件夹必须切换到新建的用户组下，否则会出现权限问题
 
-```text
+```bash
 修改文件权限：chmod 754 start.sh
 
 添加用户：useradd elastic 创建用户不指定组会默认自己名称一个组
@@ -15,7 +15,7 @@
 修改文件所属用户：chown -R elastic elasticsearch/
 查看用户信息（所在组等）：id elastic
 
-
+查看内核版本：arch
 ```
 
 启停脚本：
@@ -63,6 +63,19 @@ sysctl -p
 discovery.seed_hosts: ["127.0.0.1"]
  
 cluster.initial_master_nodes: ["node-1"]
+
+
+[1]: max file descriptors [65535] for elasticsearch process is too low, increase to at least [65536]
+vim /etc/security/limits.conf
+* soft nofile 65536
+* hard nofile 65536
+
+vim /etc/profile
+ulimit -n 65536
+/etc/init.d/sshd restart
+
+修改后需要重启终端
+
 ```
 
 es配置文件：
@@ -83,9 +96,24 @@ elasticsearch.hosts: ["http://localhost:9200"]
 kibana.index: ".kibana"
 ```
 
+filebeat启停：
 
+```yaml
+./filebeat -e -c filebeat.yml
+```
 
+filebeat 安装问题：
 
+```yaml
+2020-04-01T15:13:16.939+0800    INFO    instance/beat.go:412    filebeat stopped.
+2020-04-01T15:13:16.939+0800    ERROR    instance/beat.go:933    Exiting: 1 error: setting 'filebeat.prospectors' has been removed
+Exiting: 1 error: setting 'filebeat.prospectors' has been removed
+
+查看官网有此问题答案：https://discuss.elastic.co/t/filebeat-prospectors-has-been-removed/205563
+What is the version of Filebeat your are using? Prospectors has been renamed to inputs in 6.3. So if you simply change prospectors to inputs, it should work.
+
+在6.3版本以后，在配置文件中需要把filebeat.prospectors 修改为filebeat.inputs
+```
 
 
 
