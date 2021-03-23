@@ -1,6 +1,8 @@
 # 环境配置
 
-安装elastic，elatsic不能用root启动，文件夹必须切换到新建的用户组下，否则会出现权限问题
+### 安装elastic
+
+elatsic不能用root启动，文件夹必须切换到新建的用户组下，否则会出现权限问题
 
 ```bash
 修改文件权限：chmod 754 start.sh
@@ -71,6 +73,7 @@ vim /etc/security/limits.conf
 * hard nofile 65536
 
 vim /etc/profile
+ulimit -n
 ulimit -n 65536
 /etc/init.d/sshd restart
 
@@ -99,7 +102,7 @@ kibana.index: ".kibana"
 filebeat启停：
 
 ```yaml
-./filebeat -e -c filebeat.yml
+nohup ./filebeat -e -c filebeat.yml &
 ```
 
 filebeat 安装问题：
@@ -114,8 +117,6 @@ What is the version of Filebeat your are using? Prospectors has been renamed to 
 
 在6.3版本以后，在配置文件中需要把filebeat.prospectors 修改为filebeat.inputs
 ```
-
-
 
 
 
