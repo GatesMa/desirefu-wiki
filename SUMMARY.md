@@ -56,6 +56,7 @@
     * [bindtap事件子元素不传参](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/bindtap-shi-jian-zi-yuan-su-bu-chuan-can.md)
     * [navigateTo传递对象，需要编码解码\(x\)](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/navigateto-chuan-di-dui-xiang-xu-yao-bian-ma-jie-ma.md)
     * [文件上传res.data是string\(x\)](qian-duan-she-ji-fang-an/guan-jian-she-ji-ji-lu/wen-jian-shang-chuan-res.data-shi-string.md)
+* [优化](you-hua.md)
 * [技术选型](ji-shu-xuan-xing.md)
 * [DFU运维](dfu-yun-wei/README.md)
   * [机器部署](dfu-yun-wei/ji-qi-bu-shu.md)
