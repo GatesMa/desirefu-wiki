@@ -16,13 +16,21 @@ description: DesireFU校园组队招募小程序前后端开发概览wiki
 
 
 
-项目仓库地址：[https://github.com/GatesMa/desirefu](https://github.com/GatesMa/desirefu)
+项目仓库地址
+
+{% hint style="info" %}
+后端：[https://github.com/GatesMa/desirefu](https://github.com/GatesMa/desirefu)
+
+微信小程序端：[https://github.com/GatesMa/desirefu-mini-program](https://github.com/GatesMa/desirefu-mini-program)
+{% endhint %}
 
 Wiki文档地址：[https://wiki.desirefu.gatesma.cn/](https://wiki.desirefu.gatesma.cn/)
 
 API-DOC地址：[http://doc.desirefu.gatesma.cn/desire\_fu/v1](http://doc.desirefu.gatesma.cn/desire_fu/v1)
 
 Kibana地址：null
+
+演示视频Demo：[https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4](https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4)
 
 ## 当前进展：
 
