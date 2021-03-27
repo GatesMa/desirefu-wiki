@@ -19,6 +19,7 @@
   * [ES集群](she-ji-fang-an/es-ji-qun/README.md)
     * [集群环境配置](she-ji-fang-an/es-ji-qun/ji-qun-huan-jing-pei-zhi.md)
   * [文件上传](she-ji-fang-an/wen-jian-shang-chuan.md)
+  * [JMX线程池监控](she-ji-fang-an/jmx-xian-cheng-chi-jian-kong.md)
   * [其他](she-ji-fang-an/qi-ta/README.md)
     * [微信登陆](she-ji-fang-an/qi-ta/tong-yi-deng-lu.md)
     * [角色规则](she-ji-fang-an/qi-ta/jiao-se-gui-ze.md)
