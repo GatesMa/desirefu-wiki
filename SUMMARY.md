@@ -63,6 +63,7 @@
   * [nginx压测](you-hua/nginx-ya-ce.md)
   * [服务压测](you-hua/fu-wu-ya-ce/README.md)
     * [/desire\_fu/v1/login/can\_login\_account](you-hua/fu-wu-ya-ce/desire_fu-v1-login-can_login_account.md)
+    * [/desire\_fu/v1/normal\_account/get](you-hua/fu-wu-ya-ce/desire_fu-v1-normal_account-get.md)
   * [Tomcat线程池优化](you-hua/tomcat-xian-cheng-chi-you-hua.md)
   * [ElasticSearch缓存](you-hua/elasticsearch-huan-cun.md)
 * [技术选型](ji-shu-xuan-xing.md)
