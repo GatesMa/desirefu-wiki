@@ -40,7 +40,7 @@ Thread Group（线程组），主要包含以下3个参数：
 
 ### **4 聚合报告分析**
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../../.gitbook/assets/image%20%2866%29.png)
 
 | Term | Definition |
 | :--- | :--- |
