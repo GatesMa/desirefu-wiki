@@ -29,18 +29,36 @@ PUT _ingest/pipeline/dfu-log
       "grok": {
         "field": "message",
         "patterns": [
-          "%{TIMESTAMP_ISO8601:datetime} %{NOTSPACE:level} %{NOTSPACE:logger} %{NOTSPACE:thread} %{NOTSPACE:version} %{NOTSPACE:trace_id} %{NOTSPACE:span_id} %{NOTSPACE:app_name} %{NOTSPACE:client} %{NOTSPACE:callee} %{NOTSPACE:mod_name} %{NOTSPACE:act_name} %{IP:client_ip} %{IP:server_ip} %{NOTSPACE:exec_time_us} %{NOTSPACE:error_code} %{NOTSPACE:error_msg} %{NOTSPACE:req_method} %{NOTSPACE:rsp_code} %{NOTSPACE:req_url} %{NOTSPACE:req_body} %{GREEDYDATA:rsp_body}"
+          "%{TIMESTAMP_ISO8601:datetime} %{NOTSPACE:level} %{NOTSPACE:logger} %{NOTSPACE:thread} %{NUMBER:version} %{NOTSPACE:trace_id} %{NOTSPACE:span_id} %{NOTSPACE:app_name} %{NOTSPACE:client} %{NOTSPACE:callee} %{NOTSPACE:mod_name} %{NOTSPACE:act_name} %{IP:client_ip} %{IP:server_ip} %{NUMBER:exec_time_us} %{NUMBER:error_code} %{NOTSPACE:error_msg} %{NOTSPACE:req_method} %{NOTSPACE:rsp_code} %{NOTSPACE:req_url} %{NOTSPACE:req_body} %{GREEDYDATA:rsp_body}"
         ]
       }
     },
     {
       "remove": {
-        "field": "message"   // 删除message字段
+        "field": "message"
       }
     },
     {
       "remove": {
-        "field": "beat"    // 删除beat字段（无用）
+        "field": "beat"
+      }
+    },
+    {
+      "convert" : {
+        "field" : "exec_time_us",
+        "type": "integer"
+      }
+    },
+    {
+      "convert" : {
+        "field" : "version",
+        "type": "integer"
+      }
+    },
+    {
+      "convert" : {
+        "field" : "error_code",
+        "type": "integer"
       }
     }
   ]
