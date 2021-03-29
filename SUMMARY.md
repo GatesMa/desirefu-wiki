@@ -11,7 +11,7 @@
     * [队伍相关](she-ji-fang-an/mo-kuai/dui-wu-xiang-guan.md)
     * [其他](she-ji-fang-an/mo-kuai/qi-ta.md)
   * [API DOC 文档建设](she-ji-fang-an/api-doc-wen-dang-jian-she.md)
-  * [请求日志收集可视化](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/README.md)
+  * [请求日志收集](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/README.md)
     * [环境配置](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/huan-jing-pei-zhi.md)
     * [效果预览](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/xiao-guo-yu-lan.md)
     * [Logback收集请求日志](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/logback-shou-ji-qing-qiu-ri-zhi.md)
