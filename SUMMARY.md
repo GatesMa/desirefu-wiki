@@ -67,6 +67,7 @@
   * [Tomcat线程池优化](you-hua/tomcat-xian-cheng-chi-you-hua.md)
   * [ElasticSearch缓存](you-hua/elasticsearch-huan-cun/README.md)
     * [集群环境配置](you-hua/elasticsearch-huan-cun/ji-qun-huan-jing-pei-zhi.md)
+    * [添加索引](you-hua/elasticsearch-huan-cun/tian-jia-suo-yin.md)
 * [监控](jian-kong/README.md)
   * [Kiban可视化面板](jian-kong/kiban-ke-shi-hua.md)
   * [数据库访问日志监控](jian-kong/shu-ju-ku-fang-wen-ri-zhi-jian-kong.md)
