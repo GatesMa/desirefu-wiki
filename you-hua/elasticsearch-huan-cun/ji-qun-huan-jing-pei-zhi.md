@@ -101,8 +101,6 @@ it is forbidden to set both [discovery.seed_hosts] and [discovery.zen.ping.unica
 master not discovered or elected yet, an election requires
 ```
 
-ES 7.0版本集群配置报错，没发现master的异常。 \[hadoop-1\] master not discovered or elected yet, an election requires a node with id \[CCzmifRuSm6RxolhJ7XfDw\], have discovered \[\] which is not a quorum; discovery will continue using \[\]
-
 首先，很多问题都出现在第一次配置失败。假如你Es项目路径下有建立了datas的目录，那就要在每次改配置的时候去清掉里面的东西，像是缓存垃圾，导致后面每次修改都不生效。7.0后的集群 配置是discovery.seed\_hosts: \[“IP\_1:9300”, “IP\_2:9300”, “IP\_3:9300”\]，之前的版本使用discovery.zen.ping.unicast.hosts，不能同时配置。
 
 ```yaml
