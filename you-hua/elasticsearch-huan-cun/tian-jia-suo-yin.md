@@ -52,7 +52,11 @@ PUT /desirefu
 
 
 
+SpringBoot 链接elasticsearch报错：Caused by: java.lang.NoClassDefFoundError: org/apache/logging/log4j/Level，原因是elasticsearch的包需要使用log4j，需要引入下面的jar包：
 
+```javascript
+compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.7'
+```
 
 
 
