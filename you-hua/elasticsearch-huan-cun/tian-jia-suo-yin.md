@@ -50,7 +50,80 @@ PUT /desirefu
 }
 ```
 
+**队伍索引：**
 
+```javascript
+POST /desirefu/organize/_mapping
+{
+  "properties": {
+    "organizeId": {
+      "type": "long"
+    },
+    "competitionId": {
+      "type": "long"
+    },
+    "competition": {
+      "properties": {
+        "competitionId": {
+          "type": "long"
+        },
+        "accountId": {
+          "type": "long"
+        },
+        "accountType": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "keyword"
+        },
+        "founder": {
+          "type": "keyword"
+        },
+        "content": {
+          "type": "text"
+        },
+        "pv": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "beginTime": {
+          "type": "keyword"
+        },
+        "endTime": {
+          "type": "keyword"
+        },
+        "createdIme": {
+          "type": "keyword"
+        },
+        "overviewImg": {
+          "type": "keyword"
+        },
+        "overviewText": {
+          "type": "text"
+        }
+      }
+    },
+    "srcAccountId": {
+      "type": "long"
+    },
+    "nickName": {
+      "type": "keyword"
+    },
+    "createdIme": {
+      "type": "keyword"
+    },
+    "memberNum": {
+      "type": "integer"
+    }
+  }
+}
+
+```
 
 SpringBoot 链接elasticsearch报错：Caused by: java.lang.NoClassDefFoundError: org/apache/logging/log4j/Level，原因是elasticsearch的包需要使用log4j，需要引入下面的jar包：
 
