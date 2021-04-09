@@ -2,7 +2,7 @@
 
 效果总览：
 
-![](../.gitbook/assets/image%20%28106%29.png)
+![](../.gitbook/assets/image%20%28111%29.png)
 
 
 

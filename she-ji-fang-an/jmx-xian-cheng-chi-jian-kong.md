@@ -53,7 +53,7 @@ public void metricsReport() {
 
 日志grep命令：cat desire\_fu.log \| grep 'poolSize'：
 
-![](../.gitbook/assets/image%20%2882%29.png)
+![](../.gitbook/assets/image%20%2883%29.png)
 
 
 

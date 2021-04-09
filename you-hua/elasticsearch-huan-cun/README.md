@@ -14,5 +14,5 @@ Desirefu后端服务使用人数多的情况下，请求大量增加。将会面
 
 Kibana配合ES：
 
-![](../../.gitbook/assets/image%20%2887%29.png)
+![](../../.gitbook/assets/image%20%2889%29.png)
 
