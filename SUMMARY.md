@@ -17,7 +17,7 @@
     * [Logback收集请求日志](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/logback-shou-ji-qing-qiu-ri-zhi.md)
     * [日志解析](she-ji-fang-an/ri-zhi-shou-ji-ke-shi-hua/ri-zhi-jie-xi.md)
   * [文件上传](she-ji-fang-an/wen-jian-shang-chuan.md)
-  * [JMX线程池监控](she-ji-fang-an/jmx-xian-cheng-chi-jian-kong.md)
+  * [JMX对Tomcat线程池监控](she-ji-fang-an/jmx-xian-cheng-chi-jian-kong.md)
   * [其他](she-ji-fang-an/qi-ta/README.md)
     * [微信登陆](she-ji-fang-an/qi-ta/tong-yi-deng-lu.md)
     * [角色规则](she-ji-fang-an/qi-ta/jiao-se-gui-ze.md)
