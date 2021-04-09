@@ -38,7 +38,7 @@
 * 脚本运行期间，**成功的请求**的响应时间百分比分布图
 * 可理解为聚合报告对应的指标（图二）
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/image%20%28105%29.png)
 
 #### Bytes throughput Over Time
 
