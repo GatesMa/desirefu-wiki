@@ -10,9 +10,9 @@
 
 接口QPS：5**左右**
 
-![&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x5206;&#x5E03;&#x56FE;](../../.gitbook/assets/image%20%2899%29.png)
+![&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x5206;&#x5E03;&#x56FE;](../../.gitbook/assets/image%20%28100%29.png)
 
-![ TPS](../../.gitbook/assets/image%20%28100%29.png)
+![ TPS](../../.gitbook/assets/image%20%28101%29.png)
 
 
 
