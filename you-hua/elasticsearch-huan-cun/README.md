@@ -10,9 +10,9 @@ Desirefu后端服务使用人数多的情况下，请求大量增加。将会面
 
 使用缓存可以很好的解决访问DB的问题，但是也会相应的带来一些问题，比如数据一致性问题。使用ES作为缓存的好处：1. 文档存储，避免查询很多张表。2. 较DB耗时少。3. 支持复杂的查询（模糊查询、聚合查询等）
 
-![](../../.gitbook/assets/image%20%2873%29.png)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 Kibana配合ES：
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 

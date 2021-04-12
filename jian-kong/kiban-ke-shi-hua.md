@@ -2,13 +2,13 @@
 
 效果总览：
 
-![](../.gitbook/assets/image%20%28114%29.png)
+![](../.gitbook/assets/image%20%28116%29.png)
 
 （1）请求总量
 
 请求数总量直接统计日志的文档数目即可。对于总览服务很有帮助。
 
-![](../.gitbook/assets/image%20%28120%29.png)
+![](../.gitbook/assets/image%20%28122%29.png)
 
 （2）接口访问比例饼图
 
@@ -20,13 +20,13 @@
 
 将请求日志按timestamp时间字段进行聚合，可以展示每个时间段请求量的分布。对于后期查找问题原因很关键。
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 （4）接口耗时柱状图
 
 按接口耗时范围进行聚合，可以看出大部分的请求耗时分布，对于查看后端服务的性能很有帮助。
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2886%29.png)
 
 
 

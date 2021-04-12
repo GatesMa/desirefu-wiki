@@ -4,15 +4,15 @@
 
 百度云服务器监控机器CPU、磁盘、流量等，我们可以根据自己的需要设置相应的报警指标，例如当CPU使用率达到80%时告警等等：
 
-![](../.gitbook/assets/image%20%2888%29.png)
+![](../.gitbook/assets/image%20%2889%29.png)
 
-![](../.gitbook/assets/image%20%28101%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 华为云的机器监控类似，同样可以设置告警指标等：
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 
 
