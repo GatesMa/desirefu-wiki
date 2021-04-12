@@ -31,14 +31,14 @@
 * **重点：**可以根据响应时间和变化和TPS以及模拟的并发数变化，判断性能拐点的范围
 * 一条线代表一个事务（请求）
 
-![](../../.gitbook/assets/image%20%28101%29.png)
+![](../../.gitbook/assets/image%20%28104%29.png)
 
 #### Response times Percentiles Over Time
 
 * 脚本运行期间，**成功的请求**的响应时间百分比分布图
 * 可理解为聚合报告对应的指标（图二）
 
-![](../../.gitbook/assets/image%20%28110%29.png)
+![](../../.gitbook/assets/image%20%28113%29.png)
 
 #### Bytes throughput Over Time
 
@@ -46,7 +46,7 @@
 * 在容量规划、可用性测试和大文件上传下载场景中，吞吐量是很重要的一个监控和分析指标
 * 会**忽略**事务控制器样本结果
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](../../.gitbook/assets/image%20%2895%29.png)
 
 #### Latencies Over Time
 
@@ -54,7 +54,7 @@
 * **可理解理解成：**从发送请求到收到第一个响应所花费的时间
 * **包括**事务控制器样本结果
 
-![](../../.gitbook/assets/image%20%2873%29.png)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 #### Connect Time Over Time
 
@@ -62,7 +62,7 @@
 * 包括 SSL 三次握手的时间
 * 当出现链 Connection Time Out 的错误时，Connect Time 就会等于链接超时时间
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%2893%29.png)
 
 #### Transactions Per Second（最重要）
 
@@ -70,7 +70,7 @@
 * 衡量系统处理能力的重要指标
 * **包括**事务控制器样本结果
 
-![](../../.gitbook/assets/image%20%2881%29.png)
+![](../../.gitbook/assets/image%20%2882%29.png)
 
 #### Time Vs Threads
 
@@ -78,7 +78,7 @@
 * 可以通过这个对应的变化曲线来作为确定性能拐点的一个参考值
 * 可以选中或取消选中下面的 Sampler
 
-![](../../.gitbook/assets/image%20%2876%29.png)
+![](../../.gitbook/assets/image%20%2877%29.png)
 
 #### Response Time Distribution（重要）
 
