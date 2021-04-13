@@ -40,7 +40,7 @@ Thread Group（线程组），主要包含以下3个参数：
 
 ### **4 聚合报告分析**
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 | Term | Definition |
 | :--- | :--- |
@@ -55,4 +55,6 @@ Thread Group（线程组），主要包含以下3个参数：
 | Received KB/sec | 每秒从服务端接收到的数据量 |
 | Sent KB/sec | 每秒向服务端发送的数据量 |
 | Label | Jmeter中元件的Name属性值 |
+
+
 
