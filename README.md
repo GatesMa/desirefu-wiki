@@ -30,7 +30,7 @@ API-DOC地址：[http://doc.desirefu.gatesma.cn/desire\_fu/v1](http://doc.desire
 
 Kibana监控地址：[跳转](http://182.61.51.79:5601/app/kibana#/dashboard/77923bd0-9850-11eb-9c1a-b5c51315c15f?_g=%28refreshInterval:%28pause:!t,value:0%29,time:%28from:now%2Fy,mode:quick,to:now%2Fy%29%29&_a=%28description:'',filters:!%28%29,fullScreenMode:!f,options:%28darkTheme:!f,hidePanelTitles:!f,useMargins:!t%29,panels:!%28%28embeddableConfig:%28%29,gridData:%28h:10,i:'1',w:15,x:0,y:0%29,id:'592a7ac0-907d-11eb-9c1a-b5c51315c15f',panelIndex:'1',type:visualization,version:'6.4.3'%29,%28embeddableConfig:%28%29,gridData:%28h:10,i:'2',w:9,x:15,y:0%29,id:'7546fb70-907d-11eb-9c1a-b5c51315c15f',panelIndex:'2',type:visualization,version:'6.4.3'%29,%28embeddableConfig:%28%29,gridData:%28h:15,i:'3',w:24,x:0,y:10%29,id:b185cda0-907d-11eb-9c1a-b5c51315c15f,panelIndex:'3',type:visualization,version:'6.4.3'%29,%28embeddableConfig:%28%29,gridData:%28h:15,i:'4',w:24,x:24,y:15%29,id:'2ae2d580-907e-11eb-9c1a-b5c51315c15f',panelIndex:'4',type:visualization,version:'6.4.3'%29,%28embeddableConfig:%28%29,gridData:%28h:15,i:'5',w:24,x:0,y:25%29,id:b1345cd0-907e-11eb-9c1a-b5c51315c15f,panelIndex:'5',type:visualization,version:'6.4.3'%29,%28embeddableConfig:%28%29,gridData:%28h:15,i:'6',w:24,x:24,y:0%29,id:e1a9b780-907d-11eb-9c1a-b5c51315c15f,panelIndex:'6',type:visualization,version:'6.4.3'%29%29,query:%28language:lucene,query:''%29,timeRestore:!f,title:Dashboard,viewMode:view%29)
 
-演示视频Demo：[https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4](https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/demo.mp4)
+演示视频Demo：[视频](https://dfu-1257282228.cos.ap-chengdu.myqcloud.com/dfu/video/video0.mp4)
 
 ## 当前进展：
 
